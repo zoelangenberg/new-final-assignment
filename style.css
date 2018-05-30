@@ -1,0 +1,306 @@
+body{
+  margin: 0;
+  width: 100%;
+}
+
+header {
+  /* background-color: blue; */
+  /* width: 100%; */
+  /* padding: 1em; */
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #333333;
+}
+
+.hamburger span {
+	display: block;
+	width: 30px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+}
+
+.hamburger{
+  position: absolute;
+  padding-right: 50px;
+  /* display: inline-block; */
+  margin-top: -57px;
+  z-index: 30;
+  right: 0;
+}
+
+.hidden-menu{
+  background-color: yellow;
+  width: 20%;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  /* z-index: -1; */
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  /* display: none; */
+  color: white;
+  background-color: #566e83;
+  opacity: 0.7;
+}
+
+.hidden-menu li{
+  list-style-type: none;
+  padding: 15px;
+}
+
+li{
+  text-decoration: none;
+}
+
+.expand{
+  display: none;
+}
+
+h1{
+  text-align: center;
+  margin-top: 1em;
+  /* display: inline-block; */
+  letter-spacing: 2px;
+}
+
+#about-section h1{
+  font-size: 2em;
+}
+
+h3{
+  text-align: center;
+  font-family: "Oswald";
+  letter-spacing: 1px;
+  /* text-transform: uppercase; */
+  font-weight: 300;
+}
+
+h2{
+  text-align: center;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+p{
+  font-family: "Roboto Slab";
+  /* text-transform: capitalize; */
+  text-align: center;
+
+}
+
+#home{
+  background-image: url('beach.jpg');
+  background-size: cover;
+  width: 80%;
+  padding: 3em;
+  margin: 4em auto;
+}
+
+#home-main-title{
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  background-color: rgba(86,110,131,0.8);
+  /* opacity: 0.8; */
+  width: 50%;
+  padding: 2em 3em;
+  margin: auto;
+}
+
+.button{
+  margin: auto;
+  font-family: "Roboto Slab";
+  text-transform: capitalize;
+  background-color: white;
+  color: #333333;
+  text-decoration: none;
+  padding: 1em;
+  /* margin-top: 1em; */
+  display: block;
+  width: 150px;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 300;
+}
+
+
+#box-one{
+  background-image: url('computer.jpg');
+  background-size: cover;
+  font-family: "Roboto Slab";
+  /* width: 25%; */
+  /* display: inline-block; */
+  /* margin-left: 7.5%; */
+  height: 6em;
+  padding-top: 17em;
+  flex-grow: 1;
+}
+
+#box-two{
+  background-image: url('phone.jpg');
+  background-size: cover;
+  background-color: green;
+  /* width: 25%; */
+  /* display: inline-block; */
+  /* margin-left: 3em; */
+  height: 6em;
+  padding-top: 17em;
+  flex-grow: 1;
+}
+
+#box-three{
+  background-image: url('laptop.jpg');
+  background-size: cover;
+  background-color: green;
+  /* width: 25%; */
+  /* display: inline-block; */
+  /* margin-left: 3em; */
+  height: 6em;
+  padding-top: 17em;
+  flex-grow: 1;
+}
+
+.box-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+#about-section{
+  /* width: 100%; */
+  /* background-color: rgba(206,213,214,1); */
+  background-color: #566e83;
+  margin: 4em auto;
+  padding: 3em;
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+.services {
+  margin-bottom: 20em;
+  width: 80%;
+  margin: auto;
+}
+
+.follow{
+  display: block;
+  width: 100%;
+  background-color: #566e83;
+  color: white;
+  margin-top: 4em;
+}
+
+.follow h2{
+  text-align: center;
+  padding: 1em;
+}
+
+.instagram-section{
+  margin-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 5em;
+}
+
+.instagram-section div{
+  background-color: green;
+  width: 10em;
+  height: 10em;
+}
+
+.instagram-1{
+  background-image: url('instagram-1.jpg');
+  background-size: cover;
+}
+
+.instagram-2{
+  background-image: url('instagram-2.jpeg');
+  background-size: cover;
+}
+
+.instagram-3{
+  background-image: url('instagram-3.jpeg');
+  background-size: cover;
+}
+
+.instagram-4{
+  background-image: url('instagram-4.jpeg');
+  background-size: cover;
+}
+
+.instagram-5{
+  background-image: url('instagram-5.jpeg');
+  background-size: cover;
+}
+
+.instagram-6{
+  background-image: url('instagram-6.jpeg');
+  background-size: cover;
+}
+
+@media (max-width: 969px) {
+  .instagram-section{
+    display: none;
+  }
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+#free-training{
+  background-image: url('study.jpg');
+  background-size: cover;
+  width: 80%;
+  padding: 3em;
+  margin: 4em auto;
+}
+
+#free-training-title{
+  font-family: "Oswald";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: white;
+  background-color: #566e83;
+  /* background-color: rgba(206,213,214,1); */
+  opacity: 0.8;
+  width: 50%;
+  padding: 2em 3em;
+  margin: auto;
+}
+
+.whats-included{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+.whats-included li{
+  font-family: "Roboto Slab";
+  list-style-position: inside;
+}
+
+.whats-included p{
+  text-decoration: underline;
+
+}
